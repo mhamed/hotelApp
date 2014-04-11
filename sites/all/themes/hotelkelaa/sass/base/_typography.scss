@@ -1,0 +1,652 @@
+/**
+ * Special Contents
+ */
+/* --- Pre, Code ---*/
+pre,
+.code {
+  background: #ffc;
+  border-left: 5px solid #cdcdcd;
+  font: .92em/1.5 Monaco, Consolas, "Courier News", monospace;
+  margin: 15px 0;
+  padding: 10px 15px !important;
+}
+
+/* --- Dropcap ---*/
+.dropcap {
+  color: #333;
+  display: block;
+  float: left;
+  font: 60px/40px Georgia, Times, serif;
+  padding: 7px 8px 0 0;
+}
+
+/* --- Blockquote ---*/
+blockquote {
+  font-family: Georgia, Times, serif;
+  font-size: 115%;
+}
+
+blockquote span.open {
+  background: url(../images/typo/so-q.gif) no-repeat left top;
+  padding: 0 0 0 20px;
+}
+
+blockquote span.close {
+  background: url(../images/typo/sc-q.gif) no-repeat bottom right;
+  padding: 0 20px 0 0;
+}
+
+/* --- Inline Words Hilite ---*/
+.highlight {
+  background: #ffc;
+  font-weight: bold;
+  padding: 1px 5px;
+}
+
+/* --- Tips, Error, Message, Hightlight ---*/
+p.error,
+p.message,
+p.tips,
+p.rss,
+p.key,
+p.tag,
+p.cart,
+p.note,
+p.photo,
+p.doc,
+p.mobi {
+  padding-left: 25px;
+  position: relative;
+}
+
+p.error span.icon,
+p.message span.icon,
+p.tips span.icon,
+p.rss span.icon,
+p.key span.icon,
+p.tag span.icon,
+p.cart span.icon,
+p.note span.icon,
+p.photo span.icon,
+p.doc span.icon,
+p.mobi span.icon {
+  background-image: url(../images/typo/icons/icons-sprites-silk.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 18px;
+}
+
+p.error span.icon {
+  background-position: left -54px;
+}
+
+p.message span.icon {
+  background-position: left -72px;
+}
+
+p.tips span.icon {
+  background-position: left -90px;
+}
+
+p.key span.icon {
+  background-position: left -108px;
+}
+
+p.tag span.icon {
+  background-position: left -126px;
+}
+
+p.cart span.icon {
+  background-position: right -54px;
+}
+
+p.doc span.icon {
+  background-position: right -72px;
+}
+
+p.note span.icon {
+  background-position: right -90px;
+}
+
+p.photo span.icon {
+  background-position: right -108px;
+}
+
+p.mobi span.icon {
+  background-position: right -126px;
+}
+
+p.error {
+  color: #bf0000;
+}
+
+p.message {
+  color: #4b7fb0;
+}
+
+p.tips {
+  color: #cc8500;
+}
+
+/* --- Special list style --- */
+ul.checklist li,
+ul.star li,
+ul.arrow li,
+ul.address li,
+ul.phone li,
+ul.email li {
+  background: none;
+  margin-left: 8px;
+  overflow: hidden;
+  padding: 0 0 0 22px;
+  position: relative;
+}
+
+ul.checklist span.icon,
+ul.star span.icon,
+ul.arrow span.icon,
+ul.address span.icon,
+ul.phone span.icon,
+ul.email span.icon {
+  background-image: url(../images/typo/icons/icons-sprites-silk.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+ul.arrow span.icon {
+  background-position: left top;
+}
+
+ul.star span.icon {
+  background-position: left -18px;
+}
+
+ul.checklist span.icon {
+  background-position: left -36px;
+}
+
+ul.phone span.icon {
+  background-position: right top;
+}
+
+ul.address span.icon {
+  background-position: right -18px;
+}
+
+ul.email span.icon {
+  background-position: right -36px;
+}
+
+/* --- Big Number --- */
+p.blocknumber {
+  padding: 5px 0 5px 55px !important;
+  position: relative;
+}
+
+.bignumber-1,
+.bignumber-2,
+.bignumber-3 {
+  background-image: url(../images/typo/numberlist-bg.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  display: block;
+  font: bold 20px/normal Arial, sans-serif;
+  height: 44px;
+  left: 0;
+  line-height: 44px !important;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 44px;
+}
+
+.bignumber-1 {
+  background-position: left top;
+}
+
+.bignumber-2 {
+  background-position: left -44px;
+}
+
+.bignumber-3 {
+  background-position: left -88px;
+}
+
+/* --- Talking box. Thinking box. --- */
+div.bubble {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+div.bubble .box-ct {
+  padding: 16px;
+  position: relative;
+}
+
+div.bubble .box {
+  height: 16px;
+  position: absolute;
+  width: 16px;
+}
+
+div.bubble .tl,
+div.bubble .tr,
+div.bubble .br,
+div.bubble .bl {
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+div.bubble .tl {
+  background-position: left -20px;
+  left: 0;
+  top: 0;
+}
+
+div.bubble .tr {
+  background-position: right -20px;
+  right: 0;
+  top: 0;
+}
+
+div.bubble .br {
+  background-position: right bottom;
+  bottom: 0;
+  right: 0;
+}
+
+div.bubble .bl {
+  background-position: left bottom;
+  bottom: 0;
+  left: 0;
+}
+
+div.bubble p {
+  margin: 0;
+}
+
+div.bubble span.arrow {
+  display: block;
+  font-weight: bold;
+  height: 7px;
+  margin-left: 20px;
+  width: 13px;
+}
+
+div.bubble-l1 span.arrow,
+div.bubble-l2 span.arrow {
+  background: url(../images/typo/bubble-l.png) no-repeat left top;
+}
+
+div.bubble-d1 span.arrow,
+div.bubble-d2 span.arrow {
+  background: url(../images/typo/bubble-d.png) no-repeat left top;
+}
+
+div.bubble-hl1 span.arrow,
+div.bubble-hl2 span.arrow {
+  background: url(../images/typo/bubble-hl.png) no-repeat left top;
+}
+
+div.bubble span.author {
+  background: url(../images/typo/icons/icon-author.gif) no-repeat 10px 3px;
+  display: block;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+/* Bubble light style 1 */
+div.bubble-l1 div.box-ct {
+  background: #cdcdcd;
+}
+
+div.bubble-l1 .tl,
+div.bubble-l1 .tr,
+div.bubble-l1 .bl,
+div.bubble-l1 .br {
+  background-image: url(../images/typo/bubble-l.png);
+}
+
+/* Bubble light style 2 */
+div.bubble-l2 div.box-ct {
+  background: #cdcdcd;
+}
+
+/* Bubble Dark light style 1 */
+div.bubble-d1 div.box-ct {
+  background: #444;
+  color: #fff;
+}
+
+div.bubble-d1 div.tl,
+div.bubble-d1 div.tr,
+div.bubble-d1 div.bl,
+div.bubble-d1 div.br {
+  background-image: url(../images/typo/bubble-d.png);
+}
+
+/* Bubble Dark light style 2 */
+div.bubble-d2 div.box-ct {
+  background: $bgbubble;
+  color: $white;
+}
+
+/* Bubble highlight style 1 */
+div.bubble-hl1 .box-ct {
+  background: $legend;
+  color: $white;
+}
+
+div.bubble-hl1 div.tl,
+div.bubble-hl1 div.tr,
+div.bubble-hl1 div.bl,
+div.bubble-hl1 div.br {
+  background-image: url(../images/typo/bubble-hl.png);
+}
+
+/* Bubble highlight style 2 */
+div.bubble-hl2 div.box-ct {
+  background: $legend;
+  color: $white;
+}
+
+/* Box style ---*/
+.box-sticky,
+.box-download,
+.box-grey,
+.box-hilite {
+  border: 3px dotted #dedede;
+  margin: 15px 0;
+  padding: 10px !important;
+}
+
+.box-sticky {
+  background: url(../images/typo/icons/sticky-big.png) no-repeat 10px center #ffc;
+  border-color: $boxborder;
+  border-width: 1px;
+  padding-left: 50px !important;
+}
+
+.box-download {
+  background: url(../images/typo/icons/download-big.png) no-repeat 10px center #e9f5fb;
+  border-color: $legend;
+  border-width: 1px;
+  padding-left: 50px !important;
+}
+
+.box-grey {
+  background-color: #f6f7f8;
+  color: #666;
+}
+
+.box-hilite {
+  background: #ffc;
+  border-color:$boxborder;
+}
+
+/* --- Legend --- */
+.legend-title {
+  background: #fff;
+  display: block;
+  float: left;
+  font-weight: bold;
+  left: 7px;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  position: absolute;
+  top: -12px;
+}
+
+.legend {
+  border: 1px solid #cdcdcd;
+  margin: 20px 0;
+  padding: 0 10px;
+  position: relative;
+}
+
+.legend-hilite .legend-title {
+  color: $legend;
+}
+
+.legend-hilite {
+  border: 1px solid $legend;
+  margin: 20px 0;
+  padding: 0 10px;
+  position: relative;
+}
+
+
+/**
+ * Font-Family Presets
+ */
+
+/* sans-serif small */
+body.bf-sss,
+.bf-sss .form-text,
+.snf-sss .site-name,
+.ssf-sss .site-slogan,
+.ptf-sss #page-title,
+.ntf-sss .node-title,
+.ctf-sss .comment-title,
+.btf-sss .block-title {
+  font-family: Calibri, Candara, "Helvetica Neue", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* sans-serif large */
+body.bf-ssl,
+.bf-ssl .form-text,
+.snf-ssl .site-name,
+.ssf-ssl .site-slogan,
+.ptf-ssl #page-title,
+.ntf-ssl .node-title,
+.ctf-ssl .comment-title,
+.btf-ssl .block-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* sans-serif arial/helvitica */
+body.bf-a,
+.bf-a .form-text,
+.snf-a .site-name,
+.ssf-a .site-slogan,
+.ptf-a #page-title,
+.ntf-a .node-title,
+.ctf-a .comment-title,
+.btf-a .block-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* serif small */
+body.bf-ss,
+.bf-ss .form-text,
+.snf-ss .site-name,
+.ssf-ss .site-slogan,
+.ptf-ss #page-title,
+.ntf-ss .node-title,
+.ctf-ss .comment-title,
+.btf-ss .block-title {
+  font-family: Garamond, Perpetua, "Times New Roman", serif;
+}
+
+/* serif large */
+body.bf-sl,
+.bf-sl .form-text,
+.snf-sl .site-name,
+.ssf-sl .site-slogan,
+.ptf-sl #page-title,
+.ntf-sl .node-title,
+.ctf-sl .comment-title,
+.btf-sl .block-title {
+  font-family: Georgia, Baskerville, Palatino, "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+}
+
+/* modern */
+body.bf-m,
+.bf-m .form-text,
+.snf-m .site-name,
+.ssf-m .site-slogan,
+.ptf-m #page-title,
+.ntf-m .node-title,
+.ctf-m .comment-title,
+.btf-m .block-title {
+  font-family: "Segoe UI", "Myriad Pro", Myriad, Arial, Helvetica, sans-serif;
+}
+
+/* lucida */
+body.bf-l,
+.bf-l .form-text,
+.snf-l .site-name,
+.ssf-l .site-slogan,
+.ptf-l #page-title,
+.ntf-l .node-title,
+.ctf-l .comment-title,
+.btf-l .block-title {
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Verdana, Geneva, sans-serif;
+}
+
+/* mono */
+body.bf-ms,
+.bf-ms .form-text,
+.snf-ms .site-name,
+.ssf-ms .site-slogan,
+.ptf-ms #page-title,
+.ntf-ms .node-title,
+.ctf-ms .comment-title,
+.btf-ms .block-title {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+}
+
+/*
+ * Base Font Sizes
+ */
+
+/* Base fontsize is 62.5% = 10px. Change the value in html-elements.css */
+.fs-smallest {
+  font-size: 1.1em;
+}
+
+.fs-small {
+  font-size: 1.2em;
+}
+
+.fs-medium {
+  font-size: 1.3em;
+}
+
+.fs-large {
+  font-size: 1.4em;
+}
+
+.fs-largest {
+  font-size: 1.5em;
+}
+
+html {
+  font-size: 62.5%; /* Change base font-size to 10px. */
+}
+
+body {
+  background: url(../images/bg-body.gif) 0 0 repeat #2a2523;
+  color: #af987c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5; /* Unit-less line-height means line height can scale. */
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.67em;
+}
+
+h3 {
+  font-size: 1.167em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5,
+h6 {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+  margin: 0 0 .5em;
+  font-weight: normal;
+}
+
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+em,
+dfn {
+  font-style: italic;
+}
+
+ins {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-size: 1em;
+}
+
+blockquote,
+q {
+  font-style: italic;
+  quotes: "" "";
+}
+
+blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 3em;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote p {
+  margin: 0;
+}
+
+strong,
+dfn,
+caption,
+th {
+  font-weight: bold;
+}

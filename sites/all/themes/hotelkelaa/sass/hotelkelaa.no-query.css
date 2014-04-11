@@ -1,0 +1,62 @@
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load path: /Users/mhamedhmimid/sites/hotel/sites/all/themes/hotelkelaa/sass
+        on line 2 of hotelkelaa.styles.scss
+        from line 7 of hotelkelaa.no-query.scss
+
+1: $breakpoint-no-queries: true;
+2: $breakpoint-no-query-fallbacks: true;
+3: 
+4: 
+5: 
+6: // Re-render everything from styles.scss but without media queries.
+7: @import "hotelkelaa.styles";
+
+Backtrace:
+hotelkelaa.styles.scss:2
+hotelkelaa.no-query.scss:7
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/import_node.rb:45:in `import'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/tree/root_node.rb:20:in `render'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/engine.rb:315:in `_render'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/engine.rb:262:in `render'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/exec.rb:326:in `process_result'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/exec.rb:41:in `parse'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/lib/sass/exec.rb:21:in `parse!'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/gems/sass-3.2.18/bin/scss:13:in `<top (required)>'
+/Users/mhamedhmimid/.rvm/rubies/ruby-1.9.3-p545/bin/scss:23:in `load'
+/Users/mhamedhmimid/.rvm/rubies/ruby-1.9.3-p545/bin/scss:23:in `<main>'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/bin/ruby_executable_hooks:15:in `eval'
+/Users/mhamedhmimid/.rvm/gems/ruby-1.9.3-p545@global/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /Users/mhamedhmimid/sites/hotel/sites/all/themes/hotelkelaa/sass\A         on line 2 of hotelkelaa.styles.scss\A         from line 7 of hotelkelaa.no-query.scss\A \A 1: $breakpoint-no-queries: true;\A 2: $breakpoint-no-query-fallbacks: true;\A 3: \A 4: \A 5: \A 6: // Re-render everything from styles.scss but without media queries.\A 7: @import \"hotelkelaa.styles\";"; }

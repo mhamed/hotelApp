@@ -1,0 +1,98 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+@import "susy";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+
+
+
+@import "_normalize.scss";
+// To revert all browser default styles
+
+
+//@include breakpoint($tab){
+//  color: #C6E746;
+//  body{
+//    background: #0000BB;
+//  }
+//}
+//@include breakpoint($desk){
+//  body{
+//    background: #220000;
+//  }
+//}
+
+//@include breakpoint($between){
+//  color: #C6E746;
+//  body{
+//    background: #ff0e10;
+//  }
+//}
+
+
+
+.l-page {
+  @include bidi-style(margin-left, 20px, margin-right, 0); /* setting LRT and RTL! */
+  font-size: 14px;
+
+
+                margin:0 auto;
+                @include breakpoint($tab){
+                  width: $tab;
+                }
+                @include breakpoint($desk){
+                  width: $desk;
+                }
+
+                @include breakpoint($between){
+                  width: $between;
+                }
+
+              @include breakpoint($touch){
+                width: $touch;
+
+              }
+}
+
+.l-branding{
+              @include grid-span(12, 1);
+             background: $containercolor;
+
+              }
+.l-region--navigation{
+                  @include grid-span(12, 1);
+                  background: #210c02;
+}
+.l-main{
+  @include grid-span(12, 1);
+  @include clearfix;
+}
+.l-content{
+  @include grid-span(9, 4);
+  background: $containercolor;
+}
+.l-region--sidebar-first{
+  @include grid-span(3, 1);
+  background: $containercolor;
+  padding-left: 20px;
+
+}
